@@ -1,0 +1,72 @@
+palettes:
+  - name: global_palette
+    fixed-entries:
+      # Index 0 will be your background/space color (201, 209, 224)
+      # This color will be treated as transparent for sprites in the 'transparent_sprites' group.
+      - color: {index: 1, r: 201, g: 209, b: 224}  # COLOR_SPACE
+      # Index 1 will be your character/foreground color (56, 63, 78).
+      - color: {index: 0, r: 56, g: 63, b: 78}    # COLOR_CHARACTER
+      #Not actually on sprites
+      - color: {index: 3, r: 255, g: 0, b: 255} 
+    images: automatic # Let convimg find other colors from the images if necessary.
+
+converts:
+  - name: transparent_sprites # Group for sprites where COLOR_SPACE should be transparent
+    palette: global_palette
+    transparent-color-index: 0 # Palette index 0 (which is COLOR_SPACE) will be transparent for this group.
+    images:
+      - "SPRITE_WALL_LEFT.png"
+      - "SPRITE_WALL_RIGHT.png"
+      - "SPRITE_SPIKE_LEFT.png"
+      - "SPRITE_SPIKE_RIGHT.png"
+      - "SPRITE_WEEDS_1_LEFT.png"
+      - "SPRITE_WEEDS_1_RIGHT.png"
+      - "SPRITE_WEEDS_2_LEFT.png"
+      - "SPRITE_WEEDS_2_RIGHT.png"
+      - "SPRITE_WEEDS_3_LEFT.png"
+      - "SPRITE_WEEDS_3_RIGHT.png"
+      # Add other sprites here that use COLOR_SPACE (palette index 0) for transparency.
+      # If SPRITE_BRICKS_1/2/3 have spaces that SHOULD be transparent, list them here.
+
+  - name: opaque_sprites # Group for sprites that should be fully opaque
+    palette: global_palette
+    transparent-color-index: 3
+    images:
+      - "SPRITE_TITLE.png"
+      - "SPRITE_SCORE.png"
+      - "SPRITE_BEST.png"
+      - "SPRITE_DIGIT_0.png"
+      - "SPRITE_DIGIT_1.png"
+      - "SPRITE_DIGIT_2.png"
+      - "SPRITE_DIGIT_3.png"
+      - "SPRITE_DIGIT_4.png"
+      - "SPRITE_DIGIT_5.png"
+      - "SPRITE_DIGIT_6.png"
+      - "SPRITE_DIGIT_7.png"
+      - "SPRITE_DIGIT_8.png"
+      - "SPRITE_DIGIT_9.png"
+      - "SPRITE_DIGIT_SMALL_0.png"
+      - "SPRITE_DIGIT_SMALL_1.png"
+      - "SPRITE_DIGIT_SMALL_2.png"
+      - "SPRITE_DIGIT_SMALL_3.png"
+      - "SPRITE_DIGIT_SMALL_4.png"
+      - "SPRITE_DIGIT_SMALL_5.png"
+      - "SPRITE_DIGIT_SMALL_6.png"
+      - "SPRITE_DIGIT_SMALL_7.png"
+      - "SPRITE_DIGIT_SMALL_8.png"
+      - "SPRITE_DIGIT_SMALL_9.png"
+      - "SPRITE_BRICKS_1_LEFT.png"
+      - "SPRITE_BRICKS_1_RIGHT.png"
+      - "SPRITE_BRICKS_2_LEFT.png"
+      - "SPRITE_BRICKS_2_RIGHT.png"
+      - "SPRITE_BRICKS_3_LEFT.png"
+      - "SPRITE_BRICKS_3_RIGHT.png"
+
+outputs:
+  - type: c
+    include-file: gfx.h # Output C header file name
+    palettes:
+      - global_palette
+    converts:
+      - transparent_sprites # Include the group of transparent sprites
+      - opaque_sprites    # Include the group of opaque sprites
