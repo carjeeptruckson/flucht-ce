@@ -36,7 +36,7 @@ The core mechanics remain faithful to the original:
 
 ## Building from Source
 
-This project is built using the [CE C Toolchain](https://github.com/CE-Programming/toolchain).
+This project is built using the [CE C Toolchain](https://ce-programming.github.io/toolchain/index.html).
 1.  Ensure you have the latest CE C Toolchain installed and configured.
 2.  Clone this repository: `git clone [your-repo-url]`
 3.  Navigate to the project directory: `cd FluchtCE` (or your project name)
@@ -44,5 +44,4 @@ This project is built using the [CE C Toolchain](https://github.com/CE-Programmi
 
 ## Credits
 
-*   **Original Thumby Game "Flucht":** Sergi Lazaro ([itch.io page](http://sergilazaro.itch.io/flucht), [GitHub](https://github.com/sergilazaro/flucht-thumby-pygame)) [1]
-*   **TI-84 Plus CE Port:** [Your Name/Handle]
+*   **Original Thumby Game "Flucht":** Sergi Lazaro ([itch.io page](http://sergilazaro.itch.io/flucht), [GitHub](https://github.com/sergilazaro/flucht)) [1]
