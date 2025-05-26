@@ -44,4 +44,4 @@ This project is built using the [CE C Toolchain](https://ce-programming.github.i
 
 ## Credits
 
-*   **Original Thumby Game "Flucht":** Sergi Lazaro ([itch.io page](http://sergilazaro.itch.io/flucht), [GitHub](https://github.com/sergilazaro/flucht)) [1]
+*   **Original Thumby Game "Flucht":** Sergi Lazaro ([itch.io](http://sergilazaro.itch.io/flucht), [GitHub](https://github.com/sergilazaro/flucht))
