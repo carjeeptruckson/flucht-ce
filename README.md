@@ -2,8 +2,8 @@
 
 **Wall jump as high as you can!**
 
-This is a port of the addictive one-button Thumby game, "Flucht" by Sergi Lazaro, to the TI-84 Plus CE graphing calculator. [1, 2] Experience the classic, challenging gameplay of Flucht, now with colorful graphics on your favorite calculator!
-
+This is a port of the addictive one-button Thumby game, "Flucht" by Sergi Lazaro, to the TI-84 Plus CE graphing calculator. Experience the classic, challenging gameplay of Flucht, now with colorful graphics on your favorite calculator!
+![Flucht Gameplay Screenshot](screenshot.png)
 ## Gameplay
 
 The core mechanics remain faithful to the original:
